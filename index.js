@@ -160,7 +160,6 @@ app.get('/image/:size/:path', (req, res) => {
 		})
 })
 
-var server = app.listen(port, function () {
-	var port = server.address().port
+app.listen(port, ()=> {
 	console.log("sever runing:", port)
 })
